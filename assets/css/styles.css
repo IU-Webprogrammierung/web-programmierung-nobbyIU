@@ -5,3 +5,57 @@
     Erstelldatum: 11.09.2024
     Letzte Änderung: 11.09.2024
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Allgemeine Styles */
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-size: 100%;
+	background-color:#131313;
+}
+
+/* Root-Schriftstile */
+
+* {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #e7e7e7;
+  line-height: 1.5;
+}
+
+/* Positionierungen */
+
+.left { text-align: left; }
+
+.right { text-align: right; }
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.justify { text-align: justify; }
+
+/* Typografie */
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.875rem; }
+
+p {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 1.8;
+}
+
