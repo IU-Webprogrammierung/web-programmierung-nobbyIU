@@ -61,6 +61,14 @@ p {
 
 /* Bilder */
 
+@keyframes slideshow {
+    0% { background-image: url("../img/heroimage.jpg"); }
+    25% { background-image: url("../img/heroimage.jpg"); }
+    50% { background-image: url("../img/heroimage2.jpg"); }
+    75% { background-image: url("../img/heroimage3.jpg"); }
+    100% { background-image: url("../img/heroimage.jpg"); }
+}
+
 .heroimage {
     background-image: url("../img/heroimage.jpg");
     background-repeat: no-repeat;
@@ -68,7 +76,9 @@ p {
     height: 400px;
     padding: 0;
     margin: 0;
- }
+    animation: slideshow 20s infinite ease-in-out;
+    transition: background-image 4s ease-in-out;
+}
 
  /* Header Navigation */
 
@@ -143,7 +153,7 @@ nav ul li a:hover::after {
     text-align: right;
 }
 
-/* Footer */
+/* Artikel */
 
 .footer {
     background-color:black;
