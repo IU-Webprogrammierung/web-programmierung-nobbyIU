@@ -71,6 +71,7 @@ p {
  }
 
  /* Header Navigation */
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -109,4 +110,41 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     background-color: #0077b6;
+}
+
+.headborder {
+    border-bottom:10px solid black;
+}
+
+ /* Artikel */
+
+.article-preview {
+    background-color: #272727;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color:white;
+}
+
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.article-snippet {
+    font-size: 16px;
+}
+
+.article-date {
+    font-size: 12px;
+    color: #999;
+    text-align: right;
+}
+
+/* Footer */
+
+.footer {
+    background-color:black;
 }
