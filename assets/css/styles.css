@@ -59,3 +59,54 @@ p {
     line-height: 1.8;
 }
 
+/* Bilder */
+
+.heroimage {
+    background-image: url("../img/heroimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+ }
+
+ /* Header Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+nav ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    font-weight: 500;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    background-color: #0077b6;
+}
