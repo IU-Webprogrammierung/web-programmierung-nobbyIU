@@ -57,9 +57,10 @@ p {
     font-size: 1.125rem;
     font-weight: 200;
     line-height: 1.8;
+    margin: 20px;
 }
 
-/* Bilder */
+/* Heroimage */
 
 @keyframes slideshow {
     0% { background-image: url("../img/heroimage.jpg"); }
@@ -78,6 +79,30 @@ p {
     margin: 0;
     animation: slideshow 20s infinite ease-in-out;
     transition: background-image 4s ease-in-out;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroimage p {
+    color: white;
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .heroimage p { font-size: 36px; }
+}
+
+@media (max-width: 768px) {
+    .heroimage p { font-size: 24px; }
+}
+
+@media (max-width: 480px) {
+    .heroimage p { font-size: 18px; }
 }
 
  /* Header Navigation */
