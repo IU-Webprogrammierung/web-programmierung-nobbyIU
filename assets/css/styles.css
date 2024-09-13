@@ -91,6 +91,7 @@ p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     font-weight: bold;
     text-align: center;
+    line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
