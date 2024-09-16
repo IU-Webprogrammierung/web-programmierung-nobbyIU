@@ -195,7 +195,18 @@ nav ul li a:hover::after { background-color: #0077b6; }
     text-align: right;
 }
 
-/* Artikel */
+/* Responsives Bild */
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding:20px;
+}
+
+
+/* Footer */
 
 .footer {
     background-color:black;
