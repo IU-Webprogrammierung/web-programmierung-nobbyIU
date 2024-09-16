@@ -1,109 +1,60 @@
 /**********************
 
-	nobby GRID
-	(c) norbert fekete 2024
-	
+    nobby flexbox
+    (c) Norbert Fekete 2024
+    
 **********************/
 
 .container {
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color:#373737;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #373737;
 }
 
 .row {
-	position: relative;
-	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.row [class^="col"] {
-	float: left;
-	margin: 0.5rem 2%;
-	min-height: 0.125rem;
+[class^="col"] {
+    margin: 0.5rem;
+    flex-basis: 100%;
 }
 
-/* Angepasste Breiten */
-.col-1 { width: 4.17%; }
-.col-2 { width: 12.5%; }
-.col-3 { width: 20.83%; }
-.col-4 { width: 29.17%; }
-.col-5 { width: 37.5%; }
-.col-6 { width: 45.83%; }
-.col-7 { width: 54.17%; }
-.col-8 { width: 62.5%; }
-.col-9 { width: 70.83%; }
-.col-10 { width: 79.17%; }
-.col-11 { width: 87.5%; }
-.col-12 { width: 95%; }
-
-/* Angepasste Breiten für kleine Bildschirme */
-.col-1-sm { width: 4.17%; }
-.col-2-sm { width: 12.5%; }
-.col-3-sm { width: 20.83%; }
-.col-4-sm { width: 29.17%; }
-.col-5-sm { width: 37.5%; }
-.col-6-sm { width: 45.83%; }
-.col-7-sm { width: 54.17%; }
-.col-8-sm { width: 62.5%; }
-.col-9-sm { width: 70.83%; }
-.col-10-sm { width: 79.17%; }
-.col-11-sm { width: 87.5%; }
-.col-12-sm { width: 95%; }
-
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.hidden-sm {
-	display: none;
-}
-
-@media only screen and (min-width: 33.75em) {  /* 540px */
-	.container {
-		width: 80%;
-	}
-    .heroimage { height: 300px; }
-}
-
-@media only screen and (min-width: 45em) {  /* 720px */
-	.col-1 { width: 4.17%; }
-	.col-2 { width: 12.5%; }
-	.col-3 { width: 20.83%; }
-	.col-4 { width: 29.17%; }
-	.col-5 { width: 37.5%; }
-	.col-6 { width: 45.83%; }
-	.col-7 { width: 54.17%; }
-	.col-8 { width: 62.5%; }
-	.col-9 { width: 70.83%; }
-	.col-10 { width: 79.17%; }
-	.col-11 { width: 87.5%; }
-	.col-12 { width: 95%; }
-
-	.hidden-sm {
-		display: block;
-	}
-    .heroimage { height: 350px; }
-}
-
-@media only screen and (min-width: 60em) { /* 960px */
-	.container {
-		width: 75%;
-		max-width: 60rem;
-	}
-    .heroimage { height: 500px; }
+@media only screen and (min-width: 720px) {
+    .col-1 { flex: 0 0 4.17%; }
+    .col-2 { flex: 0 0 12.5%; }
+    .col-3 { flex: 0 0 20.83%; }
+    .col-4 { flex: 0 0 29.17%; }
+    .col-5 { flex: 0 0 37.5%; }
+    .col-6 { flex: 0 0 45.83%; }
+    .col-7 { flex: 0 0 54.17%; }
+    .col-8 { flex: 0 0 62.5%; }
+    .col-9 { flex: 0 0 70.83%; }
+    .col-10 { flex: 0 0 79.17%; }
+    .col-11 { flex: 0 0 87.5%; }
+    .col-12 { flex: 0 0 95%; }
 }
 
 @media only screen and (max-width: 720px) {
     .col-8, .col-4 {
-        width: 100%;
-        float: none;
+        flex: 0 0 100%;
         margin: 0;
     }
-    
-    .col-4 {
-        margin-top: 20px;
+    .col-4 { margin-top: 20px; }
+}
+
+@media only screen and (min-width: 540px) {
+    .container { width: 80%; }
+}
+
+@media only screen and (min-width: 960px) {
+    .container {
+        width: 75%;
+        max-width: 60rem;
     }
 }
