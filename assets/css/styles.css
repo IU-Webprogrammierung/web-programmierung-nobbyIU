@@ -20,14 +20,9 @@ body {
 	top: 0;
 	font-size: 100%;
 	background-color:#131313;
-}
-
-/* Root-Schriftstile */
-
-* {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  color: #e7e7e7;
-  line-height: 1.5;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    color: #e7e7e7;
+    line-height: 1.5;
 }
 
 /* Positionierungen */
@@ -61,6 +56,8 @@ p {
 }
 
 .hheadline { margin: 20px; }
+
+.blue { color: #0077b6; }
 
 /* Heroimage */
 
