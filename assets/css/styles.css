@@ -60,6 +60,8 @@ p {
     margin: 20px;
 }
 
+.hheadline { margin: 20px; }
+
 /* Heroimage */
 
 @keyframes slideshow {
@@ -204,7 +206,6 @@ nav ul li a:hover::after { background-color: #0077b6; }
     margin: 0 auto;
     padding:20px;
 }
-
 
 /* Footer */
 
