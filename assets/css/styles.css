@@ -59,6 +59,11 @@ p {
 
 .blue { color: #0077b6; }
 
+.welcometext {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
 hr {
     border: 0;
     height: 1px;
