@@ -20,8 +20,8 @@
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto; 
+    width: clamp(80%, var(--container-width-medium), 60rem);
+    margin: 0 auto;
     background-color: var(--main-bg-color);
     box-shadow: 0px 0px 15px rgba(87, 87, 87, 0.2);
     border-left: 1px solid black;
@@ -42,18 +42,18 @@
 }
 
 @media only screen and (min-width: 720px) {
-    .col-1 { flex: 0 0 4.17%; }
-    .col-2 { flex: 0 0 12.5%; }
-    .col-3 { flex: 0 0 20.83%; }
-    .col-4 { flex: 0 0 29.17%; }
-    .col-5 { flex: 0 0 37.5%; }
-    .col-6 { flex: 0 0 45.83%; }
-    .col-7 { flex: 0 0 54.17%; }
-    .col-8 { flex: 0 0 62.5%; }
-    .col-9 { flex: 0 0 70.83%; }
-    .col-10 { flex: 0 0 79.17%; }
-    .col-11 { flex: 0 0 87.5%; }
-    .col-12 { flex: 0 0 95%; }
+    .col-1 { flex: 1 0 4.17%; }
+    .col-2 { flex: 1 0 12.5%; }
+    .col-3 { flex: 1 0 20.83%; }
+    .col-4 { flex: 1 0 29.17%; }
+    .col-5 { flex: 1 0 37.5%; }
+    .col-6 { flex: 1 0 45.83%; }
+    .col-7 { flex: 1 0 54.17%; }
+    .col-8 { flex: 1 0 62.5%; }
+    .col-9 { flex: 1 0 70.83%; }
+    .col-10 { flex: 1 0 79.17%; }
+    .col-11 { flex: 1 0 87.5%; }
+    .col-12 { flex: 1 0 95%; }
 }
 
 @media only screen and (max-width: 720px) {
@@ -62,6 +62,18 @@
         margin: 0;
     }
     .col-4 { margin-top: 20px; }
+}
+
+@media only screen and (min-width: 960px) {
+    .row { gap: 1.5rem; }
+}
+
+@media only screen and (max-width: 720px) {
+    .row { gap: 0.5rem; }
+}
+
+.row > [class^="col"]:last-of-type {
+    margin-right: 0;
 }
 
 @media only screen and (min-width: 540px) {
@@ -75,6 +87,6 @@
     }
 }
 
-.row > [class^="col"]:last-of-type {
-    margin-right: 0;
+.row {
+    min-height: 100px;
 }
