@@ -86,7 +86,3 @@
         max-width: var(--container-width-large);
     }
 }
-
-.row {
-    min-height: 100px;
-}
