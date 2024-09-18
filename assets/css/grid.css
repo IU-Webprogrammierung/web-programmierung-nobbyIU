@@ -2,14 +2,28 @@
 
     nobby flexbox
     (c) Norbert Fekete 2024
-    
+
 **********************/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --container-width-small: 80%;
+    --container-width-medium: 75%;
+    --container-width-large: 60rem;
+    --main-bg-color: #373737;
+    --gap-size: 1rem;
+}
 
 .container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #373737;
+    background-color: var(--main-bg-color);
 }
 
 .row {
@@ -18,10 +32,10 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    gap: var(--gap-size);
 }
 
 [class^="col"] {
-    margin: 0.5rem;
     flex-basis: 100%;
 }
 
@@ -49,12 +63,16 @@
 }
 
 @media only screen and (min-width: 540px) {
-    .container { width: 80%; }
+    .container { width: var(--container-width-small); }
 }
 
 @media only screen and (min-width: 960px) {
     .container {
-        width: 75%;
-        max-width: 60rem;
+        width: var(--container-width-medium);
+        max-width: var(--container-width-large);
     }
+}
+
+.row > [class^="col"]:last-of-type {
+    margin-right: 0;
 }
