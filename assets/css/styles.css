@@ -190,9 +190,7 @@ hr {
 
 /* News */
 
-.black-bg {
-    background-color: black;
-}
+.black-bg { background-color: black; }
 
 .grey-bg-dark {
     background-color: #5b5b5b;
@@ -203,6 +201,15 @@ hr {
     background-color: #6f6f6f;
     border-bottom: 1px solid black;
 }
+
+.row-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.row-link:hover .row { background-color: rgba(240, 240, 240, 0.5); }
+
+.row-link:hover .responsive-img { opacity: 0.5; }
 
 /* Footer */
 
