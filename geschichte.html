@@ -5,126 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballin' Central - Geschichte</title>
     <meta name="description" content="Tauche ein in die Geschichte des Basketballs bei Ballin' Central. Erfahre, wie sich dieser Sport von seinen Anfängen bis zu einem globalen Phänomen entwickelt hat.">
-    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> 
+
+    <!-- 
+    /* Removed custom CSS styles in favor of Tailwind CSS */
+    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">    
+     //-->
+     
 </head>
-<body>
-    <div class="container">
-        <div class="row headborder">
-			<div class="col-12">
-                <header>
-                    <div class="navheader">
-                        <a href="index.html" class="logo">
-                            <img src="assets/img/logo.svg" class="responsive-img" alt="Ballin' Central">
-                        </a>
-                        <div class="navheader-right">
-                            <a href="geschichte.html" class="active">Geschichte</a>
-                            <a href="regeln.html">Regeln</a>
-                            <a href="ligen.html">Top-Ligen &amp; Wettbewerbe</a>
-                            <a href="legenden.html">Legenden</a>
-                        </div>
-                    </div>
-                </header>           
-            </div>
-        </div>
+<body class="bg-neutral-900 text-white">
+    <div class="container mx-auto bg-neutral-800">
 
-        <div class="row">
-            <div class="col-12">
-                <img src="assets/img/history_head.jpg" class="responsive-img" alt="Geschichte des Basketball">
-            </div>
-        </div>
+        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild"> 
+            <div class="flex flex-col items-center">
 
-        <div class="row">
-            <div class="col-12">
-                <h1 class="hheadline">Die <strong>Geschichte</strong> des Basketballs</h1>
-                <p><strong>Basketball</strong> zählt zu den beliebtesten und am weitesten verbreiteten Sportarten weltweit. Diese Seite bietet dir einen umfassenden Überblick über alles, was du über den Sport wissen musst: Von der spannenden <strong>Entstehungsgeschichte</strong> des Spiels über die grundlegenden <strong>Regeln</strong> bis hin zu den größten <strong>Ligen</strong>, legendären Spielern und bedeutendsten <strong>Wettbewerben</strong>. Tauche ein in die faszinierende Welt des Basketballs und entdecke, wie sich dieser dynamische Sport von seinen bescheidenen Anfängen in einer Turnhalle zu einem globalen Phänomen entwickelt hat.</p>
-            </div>
-        </div>
-
-        <div class="row"><div class="col-12"><hr/></div></div>
-
-		<div class="row">
-            <div class="col-12"><h3 class="hheadline blue"><em><strong>Erfinder</strong> des Basketballs</em></h3></div>
-        </div>
+                <a href="index.html" class="mb-4">
+                    <img src="assets/img/logo.svg" class="h-20 md:h-32" alt="Ballin' Central" loading="lazy" />
+                </a>
         
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/james_naismith.jpg" class="responsive-img" alt="James Naismith">
+                <ul class="flex flex-col items-center space-y-4 text-lg md:flex-row md:space-x-6 md:space-y-0 md:text-xl">
+                    <li><a class="text-orange-400 font-bold transition duration-200 hover:text-orange-700" href="geschichte.html"><strong>Geschichte</strong></a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="regeln.html">Regeln</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="ligen.html">Top Ligen &amp; Wettbewerbe</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="legenden.html">Legenden</a></li>
+                </ul>
             </div>
-			<div class="col-8">
-                <p><strong>Basketball</strong> ist eine der beliebtesten und weltweit bekanntesten Sportarten. Erfunden wurde es im Jahr <strong>1891</strong> von Dr. <strong>James Naismith</strong>, einem Sportlehrer in Springfield, Massachusetts, USA. Naismith wurde beauftragt, ein Spiel zu entwickeln, das seine Schüler in den kalten Wintermonaten in der Halle aktiv hält. Er entwarf ein Spiel, bei dem die Spieler versuchten, einen Fußball in Pfirsichkörbe zu werfen, die auf einer erhöhten Plattform befestigt waren – so entstand <strong>Basketball</strong>.</p>
-            </div>
-        </div>
+        </nav>
 
-        <div class="row"><div class="col-12"><hr/></div></div>
-
-        <div class="row">
-            <div class="col-12"><h3 class="hheadline blue"><em><strong>Die frühen Jahre</strong></em></h3></div>
-        </div>
-
-        <div class="row">
-            <div class="col-8">
-                <p>Das erste offizielle <strong>Basketballspiel</strong> fand am <strong>21. Dezember 1891</strong> statt. Die ursprünglichen <strong>Regeln</strong> waren einfach und bestanden aus nur 13 Grundregeln. Damals wurde das Spiel mit neun Spielern pro Mannschaft gespielt, und die Körbe waren tatsächliche Pfirsichkörbe, die nach jedem Punkt von Hand geleert werden mussten. Mit der Zeit wurden die Körbe durch Metallringe mit Netzen ersetzt, und die Anzahl der Spieler wurde auf fünf pro Team reduziert, was auch heute noch der Standard ist.</p>
-            </div>
-			<div class="col-4">
-                <img src="assets/img/fruehe_jahre.jpg" class="responsive-img" alt="Fruehe Jahre">
+        <div class="grid grid-cols-1">
+            <div class="col-span-1">
+                <img src="assets/img/history_head.jpg" class="w-full h-auto" alt="Geschichte des Basketball">
             </div>
         </div>
         
-        <div class="row"><div class="col-12"><hr/></div></div>
-
-        <div class="row">
-            <div class="col-12"><h3 class="hheadline blue"><em><strong>Wachstum und Entwicklung</strong></em></h3></div>
-        </div>
-
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/nbl.jpg" class="responsive-img" alt="NBL">
+        <div class="grid grid-cols-1 mt-8 px-4 md:px-8">
+            <div class="col-span-1">
+                <h1 class="text-4xl font-bold text-orange-400 mb-4">Die <strong>Geschichte</strong> des Basketballs</h1>
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p><strong>Basketball</strong> zählt zu den beliebtesten und am weitesten verbreiteten Sportarten weltweit. Diese Seite bietet dir einen umfassenden Überblick über alles, was du über den Sport wissen musst: Von der spannenden <strong>Entstehungsgeschichte</strong> des Spiels über die grundlegenden <strong>Regeln</strong> bis hin zu den größten <strong>Ligen</strong>, legendären Spielern und bedeutendsten <strong>Wettbewerben</strong>.</p>
+                    <p>Tauche ein in die faszinierende Welt des Basketballs und entdecke, wie sich dieser dynamische Sport von seinen bescheidenen Anfängen in einer Turnhalle zu einem globalen Phänomen entwickelt hat.</p>
+                </div>
             </div>
-            <div class="col-8">
-                <p><strong>Basketball</strong> gewann in den USA schnell an Popularität und breitete sich bald international aus. Die erste professionelle <strong>Basketballliga</strong>, die <strong>National Basketball League (NBL)</strong>, wurde <strong>1898</strong> gegründet. Obwohl sie nach wenigen Jahren wieder aufgelöst wurde, wuchs die Bedeutung von <strong>Basketball</strong> sowohl im Hochschulsport als auch auf professioneller Ebene stetig.</p>
-                <p><strong>1936</strong> wurde <strong>Basketball</strong> offiziell in das Programm der <strong>Olympischen Spiele</strong> in Berlin aufgenommen, was den weltweiten Einfluss weiter stärkte. Mit der Zeit entwickelten sich neue <strong>Regeln</strong>, Spielfeldlayouts und Ausrüstungen, die den Sport veränderten.</p>
-            </div>
-        </div>
-
-        <div class="row"><div class="col-12"><hr/></div></div>
-
-        <div class="row">    
-            <div class="col-12"><h3 class="hheadline blue"><em><strong>Die NBA und die globale Expansion</strong></em></h3></div>
-        </div>
-
-        <div class="row">
-            <div class="col-8">
-                <p><strong>1946</strong> wurde die <strong>National Basketball Association (NBA)</strong> gegründet, die heute als die führende professionelle <strong>Basketballliga</strong> der Welt gilt. Die <strong>NBA</strong> brachte den Sport auf ein beispielloses Niveau und machte Stars wie <strong>Michael Jordan</strong>, <strong>Magic Johnson</strong>, <strong>Larry Bird</strong> und <strong>LeBron James</strong> weltweit bekannt.</p>
-                <p><strong>Basketball</strong> expandierte weiterhin global, und professionelle Ligen entstanden in <strong>Europa</strong>, <strong>Asien</strong> und <strong>Südamerika</strong>. Heute wird der Sport von Millionen Menschen in fast jedem Land der Welt gespielt.</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/img/nba_logo.jpg" class="responsive-img" alt="NBA">
-            </div>
-        </div>
+        </div>        
         
-        <div class="row"><div class="col-12"><hr/></div></div>
 
-        <div class="row">
-            <div class="col-12"><h3 class="hheadline blue"><em><strong>Modernes Basketball</strong></em></h3></div>
-        </div>
-
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/img/modernes_basketball.jpg" class="responsive-img" alt="Mordernes Basketball">
-            </div>
-            <div class="col-8">
-                <p>Heutzutage ist <strong>Basketball</strong> ein dynamischer und temporeicher Sport, der die Aufmerksamkeit von Millionen Menschen auf sich zieht. Internationale <strong>Wettbewerbe</strong> wie die <strong>FIBA-Weltmeisterschaft</strong> und die <strong>Olympischen Spiele</strong> bringen Nationen zusammen, während die <strong>NBA</strong> weiterhin den Höhepunkt des professionellen Basketballs darstellt. Die weltweite <strong>Beliebtheit</strong> des Sports wächst stetig weiter, angetrieben durch internationale <strong>Stars</strong> und die breite Zugänglichkeit des Spiels auf allen Leistungsebenen.</p>
+        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <div class="col-span-1">
+                <h3 class="text-3xl font-black text-orange-400 mb-4">Erfinder des Basketballs</h3>
             </div>
         </div>        
 
-        <div class="row footer">
-			<div class="col-12 center">
-                <footer>
-                    &copy; nobby 2024
-                </footer>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
+            <div class="md:col-span-1">
+                <img src="assets/img/james_naismith.jpg" class="w-full h-auto rounded-md" alt="James Naismith">
+            </div>
+            <div class="md:col-span-2">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p><strong>Basketball</strong> ist eine der beliebtesten und weltweit bekanntesten Sportarten. Erfunden wurde es im Jahr <strong>1891</strong> von Dr. <strong>James Naismith</strong>, einem Sportlehrer in Springfield, Massachusetts, USA. Naismith wurde beauftragt, ein Spiel zu entwickeln, das seine Schüler in den kalten Wintermonaten in der Halle aktiv hält.</p>
+                    <p>Er entwarf ein Spiel, bei dem die Spieler versuchten, einen Fußball in Pfirsichkörbe zu werfen, die auf einer erhöhten Plattform befestigt waren – so entstand <strong>Basketball</strong>.</p>
+                </div>
             </div>
         </div>
+
+        <div class="grid grid-cols-1 mt-32 px-4 md:px-8">
+            <div class="col-span-1">
+                <h3 class="text-3xl font-black text-orange-400 mb-4">Die frühen Jahre</h3>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
+            <div class="md:col-span-2">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p>Das erste offizielle <strong>Basketballspiel</strong> fand am <strong>21. Dezember 1891</strong> statt. Die ursprünglichen <strong>Regeln</strong> waren einfach und bestanden aus nur 13 Grundregeln. Damals wurde das Spiel mit neun Spielern pro Mannschaft gespielt, und die Körbe waren tatsächliche Pfirsichkörbe, die nach jedem Punkt von Hand geleert werden mussten.</p>
+                    <p>Mit der Zeit wurden die Körbe durch Metallringe mit Netzen ersetzt, und die Anzahl der Spieler wurde auf fünf pro Team reduziert, was auch heute noch der Standard ist.</p>
+                </div>
+            </div>
+            <div class="md:col-span-1">
+                <img src="assets/img/fruehe_jahre.jpg" class="w-full h-auto rounded-md" alt="Fruehe Jahre">
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 mt-8 px-4 md:px-8">
+            <div class="col-span-1">
+                <h3 class="text-3xl font-black text-orange-400 mb-4">Wachstum und Entwicklung</h3>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
+            <div class="md:col-span-1">
+                <img src="assets/img/nbl.jpg" class="w-full h-auto rounded-md" alt="NBL">
+            </div>
+            <div class="md:col-span-2">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p><strong>Basketball</strong> gewann in den USA schnell an Popularität und breitete sich bald international aus. Die erste professionelle <strong>Basketballliga</strong>, die <strong>National Basketball League (NBL)</strong>, wurde <strong>1898</strong> gegründet. Obwohl sie nach wenigen Jahren wieder aufgelöst wurde, wuchs die Bedeutung von <strong>Basketball</strong> sowohl im Hochschulsport als auch auf professioneller Ebene stetig.</p>
+                    <p><strong>1936</strong> wurde <strong>Basketball</strong> offiziell in das Programm der <strong>Olympischen Spiele</strong> in Berlin aufgenommen, was den weltweiten Einfluss weiter stärkte. Mit der Zeit entwickelten sich neue <strong>Regeln</strong>, Spielfeldlayouts und Ausrüstungen, die den Sport veränderten.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 mt-32 px-4 md:px-8">
+            <div class="col-span-1">
+                <h3 class="text-3xl font-black text-orange-400 mb-4">Die NBA und die globale Expansion</h3>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
+            <div class="md:col-span-2">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p><strong>1946</strong> wurde die <strong>National Basketball Association (NBA)</strong> gegründet, die heute als die führende professionelle <strong>Basketballliga</strong> der Welt gilt. Die <strong>NBA</strong> brachte den Sport auf ein beispielloses Niveau und machte Stars wie <strong>Michael Jordan</strong>, <strong>Magic Johnson</strong>, <strong>Larry Bird</strong> und <strong>LeBron James</strong> weltweit bekannt.</p>
+                    <p><strong>Basketball</strong> expandierte weiterhin global, und professionelle Ligen entstanden in <strong>Europa</strong>, <strong>Asien</strong> und <strong>Südamerika</strong>. Heute wird der Sport von Millionen Menschen in fast jedem Land der Welt gespielt.</p>
+                </div>
+            </div>
+            <div class="md:col-span-1">
+                <img src="assets/img/nba_logo.jpg" class="w-full h-auto rounded-md" alt="NBA">
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 mt-32 px-4 md:px-8">
+            <div class="col-span-1">
+                <h3 class="text-3xl font-black text-orange-400 mb-4">Modernes Basketball</h3>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8 mb-24">
+            <div class="md:col-span-1">
+                <img src="assets/img/modernes_basketball.jpg" class="w-full h-auto rounded-md" alt="Modernes Basketball">
+            </div>
+            <div class="md:col-span-2">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p>Heutzutage ist <strong>Basketball</strong> ein dynamischer und temporeicher Sport, der die Aufmerksamkeit von Millionen Menschen auf sich zieht. Internationale <strong>Wettbewerbe</strong> wie die <strong>FIBA-Weltmeisterschaft</strong> und die <strong>Olympischen Spiele</strong> bringen Nationen zusammen, während die <strong>NBA</strong> weiterhin den Höhepunkt des professionellen Basketballs darstellt. Die weltweite <strong>Beliebtheit</strong> des Sports wächst stetig weiter, angetrieben durch internationale <strong>Stars</strong> und die breite Zugänglichkeit des Spiels auf allen Leistungsebenen.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <footer class="text-center bg-black text-white py-8">
+            <p>&copy; nobby 2024</p>
+        </footer>        
     </div>
 
     <script src="assets/js/script.js"></script>
