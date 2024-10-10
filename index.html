@@ -6,118 +6,199 @@
     <title>Ballin' Central</title>
     <meta name="description" content="Willkommen bei Ballin' Central! Entdecke die faszinierende Welt des Basketballs: Geschichte, Regeln, Top-Ligen, Wettbewerbe und Legenden des Spiels.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 
-    
-    /* Removed custom CSS styles in favor of Tailwind CSS */
-
-    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> 
+
+    <!-- 
+    /* Removed custom CSS styles in favor of Tailwind CSS */
+    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">    
      //-->
+     
 </head>
-<body>
-    <div class="container">
-        <div class="row headborder">
-			<div class="col-12">
-                <header>
-                    <div class="navheader">
-                        <a href="index.html" class="logo">
-                            <img src="assets/img/logo.svg" class="responsive-img" alt="Ballin' Central">
-                        </a>
-                        <div class="navheader-right">
-                            <a href="geschichte.html">Geschichte</a>
-                            <a href="regeln.html">Regeln</a>
-                            <a href="ligen.html">Top-Ligen &amp; Wettbewerbe</a>
-                            <a href="legenden.html">Legenden</a>
-                        </div>
-                    </div>
-                </header>                    
-            </div>
-        </div>
+<body class="bg-neutral-900 text-white">
+    <div class="container mx-auto bg-neutral-800">
 
-        <div class="row heroimage">
-            <div class="col-12 center">
-                <p>Jeder Wurf ist eine Chance &dash; jeder Fehler eine Lektion.</p>
-            </div>
-        </div>
+        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild"> 
+            <div class="flex flex-col items-center">
 
-        <div class="row black-bg">
-            <div class="col-12">
-                <h3 class="hheadline"><em>Ballin' Central – dein ultimativer Basketball-Hotspot! 🏀🔥</em></h3>
-            </div>
-        </div>
-
-		<div class="row welcometext">
-			<div class="col-12">
-                <p><strong>Willkommen in der Welt des Basketballs</strong> &dash; einem Spiel, das Herzen schneller schlagen lässt und weltweit Millionen Fans begeistert. Hier findest du alles, was du über diesen faszinierenden Sport wissen musst: Von den Ursprüngen und der Geschichte des Spiels über die essenziellen Regeln, die das Spiel prägen, bis hin zu den spektakulärsten Top-Ligen & Wettbewerben, wo Stars zu Legenden werden.</p>
-                <p>Lass dich inspirieren von den größten Legenden, die den Court je betreten haben, und entdecke die aufregendsten Teams, die den Basketball zu dem machen, was er heute ist – ein globales Phänomen. Als jemand, der selbst seit dem 12. Lebensjahr Basketball spielt und diese Leidenschaft teilt, weiß ich, wie fesselnd dieser Sport sein kann. Ich versuche, so oft wie möglich in meiner Freizeit zu spielen und freue mich, diese Begeisterung mit dir zu teilen.</p>
-                <p><strong>Tauche ein und erlebe Basketball hautnah!</strong></p>
-            </div>
-        </div>
-
-        <div class="row black-bg">
-            <div class="col-12">
-                <h3 class="hheadline"><em>Basketball Newsticker</em></h3>
-            </div>
-        </div>
-        <a href="article1.html" class="row-link">
-            <div class="row grey-bg-dark">
-                <div class="col-3">
-                    <img src="assets/img/news1.jpg" class="responsive-img" alt="WM-Titel für deutsche Basketballer">
-                </div>
-                <div class="col-9">
-                    <h3 class="hheadline"><em>WM-Titel für deutsche Basketballer</em></h3>
-                    <p>Nach Olympiagold bei den Frauen überzeugt das U23-Team der Männer in der Mongolei.</p>
-                    <p><small><strong>15.09.2024</strong></small></p>
-                </div>
-            </div>
-        </a>
+                <a href="index.html" class="mb-4">
+                    <img src="assets/img/logo.svg" class="h-20 md:h-32" alt="Ballin' Central" loading="lazy" />
+                </a>
         
-        <a href="article2.html" class="row-link">
-            <div class="row grey-bg-light">
-                <div class="col-3">
-                    <img src="assets/img/news2.jpg" class="responsive-img" alt="Absteiger sorgt für Überraschung!">
-                </div>
-                <div class="col-9">
-                    <h3 class="hheadline"><em>Absteiger sorgt für Überraschung!</em></h3>
-                    <p>Die Hakro Merlins Crailsheim überzeugen gegen den Erstligisten Rostock Seawolves und sorgen für eine Überraschung.</p>
-                    <p><small><strong>14.09.2024</strong></small></p>
-                </div>
+                <ul class="flex flex-col items-center space-y-4 text-lg md:flex-row md:space-x-6 md:space-y-0 md:text-xl">
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="geschichte.html">Geschichte</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="regeln.html">Regeln</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="ligen.html">Top Ligen &amp; Wettbewerbe</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="legenden.html">Legenden</a></li>
+                </ul>
             </div>
-        </a>
+        </nav>
+        
+        <div id="hero" class="bg-cover bg-center h-[650px] max-h-800px flex items-center justify-center" style="background-image: url('assets/img/heroimage1.jpg'); border-top: 10px solid black; border-bottom: 10px solid black;">
+            <p class="text-center drop-shadow-lg w-1/2 text-white text-7xl font-bold">Jeder Wurf ist eine Chance &dash; jeder Fehler eine Lektion.</p>
+        </div>
 
-        <a href="article3.html" class="row-link">
-            <div class="row grey-bg-dark">
-                <div class="col-3">
-                    <img src="assets/img/news3.jpg" class="responsive-img" alt="Historisch! Wunderkind bricht Rekord">
-                </div>
-                <div class="col-9">
-                    <h3 class="hheadline"><em>Historisch! Wunderkind bricht Rekord</em></h3>
-                    <p>Basketball-Wunderkind Caitlin Clark sorgt in der WNBA weiterhin für Furore. Der US-Star stellt einen neuen Rekord auf.</p>
-                    <p><small><strong>14.09.2024</strong></small></p>
-                </div>
-            </div>
-        </a>
+        <div class="bg-black text-white py-8">
+            <h2 class="text-center text-white text-4xl italic">Ballin' Central &dash; dein ultimativer Basketball-Hotspot! 🏀🔥</h2>
+        </div>
 
-        <a href="article4.html" class="row-link">
-            <div class="row grey-bg-light">
-                <div class="col-3">
-                    <img src="assets/img/news4.jpg" class="responsive-img" alt="Stadionstreit mit schweren Folgen?">
-                </div>
-                <div class="col-9">
-                    <h3 class="hheadline"><em>Stadionstreit mit schweren Folgen?</em></h3>
-                    <p>New Jersey könnte schon bald eine NBA-Franchise beheimaten. Die Philadelphia 76ers erwägen einen Umzug. Doch zuvor gilt es Streitfragen zu klären.</p>
-                    <p><small><strong>13.09.2024</strong></small></p>
-                </div>
-            </div>
-        </a>
-
-        <div class="row footer">
-			<div class="col-12 center">
-                <footer>
-                    &copy; nobby 2024
-                </footer>
+        <div class="bg-neutral-700 text-white py-8">
+            <div class="text-center text-2xl mb-2 text-gray-400">
+                Aktuelle Bundesligaergebnisse
             </div>
         </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 pb-10 px-10 bg-neutral-700">
+            
+            <div class="md:col-span-1 p-4 bg-neutral-800">
+                <div class="text-center text-sm mb-2 text-gray-400">
+                    <span class="font-bold text-white">05.10.2024</span><br/>ROSTOCK SEAWOLVES<br/>Fit/One Würzburg Baskets
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F551&w=128&q=75" alt="ROSTOCK SEAWOLVES">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F540&w=128&q=75" alt="Fit/One Würzburg Baskets">
+                </div>
+                <div class="text-center mt-4 text-4xl font-bold">
+                    65:92
+                </div>
+            </div>
+        
+            <div class="md:col-span-1 p-4 bg-neutral-800">
+                <div class="text-center text-sm mb-2 text-gray-400">
+                    <span class="font-bold text-white">05.10.2024</span><br/>Basketball Löwen Braunschweig<br/>MPL Academics Heidelberg
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F422&w=128&q=75" alt="Basketball Löwen Braunschweig">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F488&w=128&q=75" alt="MPL Academics Heidelberg">
+                </div>
+                <div class="text-center mt-4 text-4xl font-bold">
+                    65:72
+                </div>
+            </div>
+        
+            <div class="md:col-span-1 p-4 bg-neutral-800">
+                <div class="text-center text-sm mb-2 text-gray-400">
+                    <span class="font-bold text-white">05.10.2024</span><br/>Ratiopharm Ulm<br/>MHP Riesen Ludwigsburg
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F418&w=128&q=75" alt="Ratiopharm Ulm">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F433&w=128&q=75" alt="MHP Riesen Ludwigsburg">
+                </div>
+                <div class="text-center mt-4 text-4xl font-bold">
+                    63:62
+                </div>
+            </div>
+        
+            <div class="md:col-span-1 p-4 bg-neutral-800">
+                <div class="text-center text-sm mb-2 text-gray-400">
+                    <span class="font-bold text-white">06.10.2024</span><br/>BC Göttingen<br/>FC Bayern München<br/>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F477&w=128&q=75" alt="BC Göttingen">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F486&w=128&q=75" alt="FC Bayern München">
+                </div>
+                <div class="text-center mt-4 text-4xl font-bold">
+                    81:95
+                </div>
+            </div>
+        
+            <div class="md:col-span-1 p-4 bg-neutral-800">
+                <div class="text-center text-sm mb-2 text-gray-400">
+                    <span class="font-bold text-white">06.10.2024</span><br/>SKYLINERS<br/>SYNTAINICS MBC
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F426&w=128&q=75" alt="SKYLINERS">
+                    <img class="w-12 h-12" src="https://bbl-fe-prod.azureedge.net/_next/image?url=https%3A%2F%2Fapi.basketball-bundesliga.de%2Fimages%2Fteams%2Flogo%2F2024%2F428&w=128&q=75" alt="SYNTAINICS MBC">
+                </div>
+                <div class="text-center mt-4 text-4xl font-bold">
+                    69:79
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 pt-20 pb-20 px-10">
+
+            <div class="md:col-span-3">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p><span class="font-black">Willkommen in der Welt des Basketballs</span> &dash; einem Spiel, das Herzen schneller schlagen lässt und weltweit Millionen Fans begeistert. Hier findest du alles, was du über diesen faszinierenden Sport wissen musst: Von den Ursprüngen und der Geschichte des Spiels über die essenziellen Regeln, die das Spiel prägen, bis hin zu den spektakulärsten Top-Ligen & Wettbewerben, wo Stars zu Legenden werden.</p>            
+                    <p>Lass dich inspirieren von den größten Legenden, die den Court je betreten haben, und entdecke die aufregendsten Teams, die den Basketball zu dem machen, was er heute ist &dash; ein globales Phänomen.</p>            
+                    <p>Als jemand, der selbst seit dem 12. Lebensjahr Basketball spielt und diese Leidenschaft teilt, weiß ich, wie fesselnd dieser Sport sein kann. Ich versuche, so oft wie möglich in meiner Freizeit zu spielen und freue mich, diese Begeisterung mit dir zu teilen.</p>            
+                    <p class="font-black">Tauche ein und erlebe Basketball hautnah!</p>
+                </div>
+            </div>
+            
+            <div class="md:col-span-2 bg-white p-4">
+                <div class="space-y-4">
+                    <p class="text-black text-2xl font-bold">Basketball Newsticker ></p>
+                    
+                    <section>
+                        <article class="block hover:bg-gray-200 transition duration-300">
+                            <a href="article1.html">
+                                <div class="flex items-center bg-gray-200 p-4">
+                                    <div class="w-1/4">
+                                        <img src="assets/img/news1.jpg" class="w-full h-auto rounded-md" alt="WM-Titel für deutsche Basketballer">
+                                    </div>
+                                    <div class="w-3/4 pl-4 text-black">
+                                        <h3 class="text-xl font-semibold"><em>WM-Titel für deutsche Basketballer</em></h3>
+                                        <p class="mt-2 text-sm">Nach Olympiagold bei den Frauen überzeugt das U23-Team der Männer in der Mongolei.</p>
+                                        <p class="mt-4 text-xs font-bold">15.09.2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    
+                        <article class="block hover:bg-gray-200 transition duration-300">
+                            <a href="article2.html">
+                                <div class="flex items-center bg-gray-300 p-4">
+                                    <div class="w-1/4">
+                                        <img src="assets/img/news2.jpg" class="w-full h-auto rounded-md" alt="Absteiger sorgt für Überraschung!">
+                                    </div>
+                                    <div class="w-3/4 pl-4 text-black">
+                                        <h3 class="text-xl font-semibold"><em>Absteiger sorgt für Überraschung!</em></h3>
+                                        <p class="mt-2 text-sm">Die Hakro Merlins Crailsheim überzeugen gegen den Erstligisten Rostock Seawolves und sorgen für eine Überraschung.</p>
+                                        <p class="mt-4 text-xs font-bold">14.09.2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    
+                        <article class="block hover:bg-gray-200 transition duration-300">
+                            <a href="article3.html">
+                                <div class="flex items-center bg-gray-200 p-4">
+                                    <div class="w-1/4">
+                                        <img src="assets/img/news3.jpg" class="w-full h-auto rounded-md" alt="Historisch! Wunderkind bricht Rekord">
+                                    </div>
+                                    <div class="w-3/4 pl-4 text-black">
+                                        <h3 class="text-xl font-semibold"><em>Historisch! Wunderkind bricht Rekord</em></h3>
+                                        <p class="mt-2 text-sm">Basketball-Wunderkind Caitlin Clark sorgt in der WNBA weiterhin für Furore. Der US-Star stellt einen neuen Rekord auf.</p>
+                                        <p class="mt-4 text-xs font-bold">14.09.2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    
+                        <article class="block hover:bg-gray-200 transition duration-300">
+                            <a href="article4.html">
+                                <div class="flex items-center bg-gray-300 p-4">
+                                    <div class="w-1/4">
+                                        <img src="assets/img/news4.jpg" class="w-full h-auto rounded-md" alt="Stadionstreit mit schweren Folgen?">
+                                    </div>
+                                    <div class="w-3/4 pl-4 text-black">
+                                        <h3 class="text-xl font-semibold"><em>Stadionstreit mit schweren Folgen?</em></h3>
+                                        <p class="mt-2 text-sm">New Jersey könnte schon bald eine NBA-Franchise beheimaten. Die Philadelphia 76ers erwägen einen Umzug. Doch zuvor gilt es Streitfragen zu klären.</p>
+                                        <p class="mt-4 text-xs font-bold">13.09.2024</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </section>
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center bg-black text-white py-8">
+            <p>&copy; nobby 2024</p>
+        </footer>
     </div>
 
     <script src="assets/js/script.js"></script>
