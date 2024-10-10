@@ -5,63 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballin' Central - Newsticker</title>
     <meta name="description" content="Aktuelle Nachrichten und Artikel rund um das Thema Basketball">
-    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> 
+
+    <!-- 
+    /* Removed custom CSS styles in favor of Tailwind CSS */
+    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">    
+     //-->
+     
 </head>
-<body>
-    <div class="container">
-        <div class="row headborder">
-			<div class="col-12">
-                <header>
-                    <div class="navheader">
-                        <a href="index.html" class="logo">
-                            <img src="assets/img/logo.svg" class="responsive-img" alt="Ballin' Central">
-                        </a>
-                        <div class="navheader-right">
-                            <a href="geschichte.html">Geschichte</a>
-                            <a href="regeln.html">Regeln</a>
-                            <a href="ligen.html">Top-Ligen &amp; Wettbewerbe</a>
-                            <a href="legenden.html">Legenden</a>
-                        </div>
-                    </div>
-                </header>           
+<body class="bg-neutral-900 text-white">
+    <div class="container mx-auto bg-neutral-800">
+
+        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild"> 
+            <div class="flex flex-col items-center">
+
+                <a href="index.html" class="mb-4">
+                    <img src="assets/img/logo.svg" class="h-20 md:h-32" alt="Ballin' Central" loading="lazy" />
+                </a>
+        
+                <ul class="flex flex-col items-center space-y-4 text-lg md:flex-row md:space-x-6 md:space-y-0 md:text-xl">
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="geschichte.html">Geschichte</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="regeln.html">Regeln</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="ligen.html">Top Ligen &amp; Wettbewerbe</a></li>
+                    <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="legenden.html">Legenden</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="grid grid-cols-1 px-4 md:px-8 mt-10 mb-10">
+            <div class="col-span-1 text-right">
+                <p class="text-white text-2xl">13.09.2024 • 17:39 Uhr</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 right">
-                <p>15.09.2024 • 15:56 Uhr</p>
+        <div class="grid grid-cols-1 gap-8 px-4 md:px-8 mb-10">
+            <div class="col-span-1">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <h3 class="text-4xl font-bold text-orange-400"><em>WM-Titel für deutsche Basketballer!</em></h3>
+                    <p><strong >Nach Olympiagold bei den Frauen überzeugt das U23-Team der Männer in der Mongolei.</strong></p>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <h1 class="hheadline">WM-Titel für deutsche Basketballer!</h1>
-                <p><strong>Nach Olympiagold bei den Frauen überzeugt das U23-Team der Männer in der Mongolei.</strong></p>
+            <div class="col-span-1 flex justify-center">
+                <img src="assets/img/news1.jpg" class="w-1/2 h-auto rounded-md" alt="WM-Titel für deutsche Basketballer">
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <img src="assets/img/news1.jpg" class="responsive-img" alt="WM-Titel für deutsche Basketballer">
+            <div class="col-span-1">
+                <div class="text-white text-2xl leading-loose space-y-6">
+                    <p>Nach dem Olympiasieg der 3x3-Basketballerinnen feiert der Deutsche Basketball-Bund auch bei den Junioren einen internationalen Erfolg in der jungen Sportart.</p>
+                    <p>Das Männerteam gewann den Titel bei der U23-WM in Ulaanbaatar. In der Hauptstadt der Mongolei setzten sich Denzel Agyeman, Linus Beikame, Fabian Giessmann und Leon Fertig im Finale mit 21:13 gegen die USA durch.</p>
+                    <p>Die Frauen um Elisa Mevius und Marie Reichert, die in Paris Gold gewonnen hatten, verpassten nach den Niederlagen im Halbfinale gegen die Niederlande (16:17) und im Spiel um Bronze gegen China (14:20) eine Medaille knapp. Mevius und Reichert spielten in der Mongolei gemeinsam mit Victoria Poros und Laura Zolper.</p>
+                </div>
             </div>
-        </div>
+        </div>              
 
-        <div class="row">
-            <div class="col-12">
-                <p>Nach dem Olympiasieg der 3x3-Basketballerinnen feiert der Deutsche Basketball-Bund auch bei den Junioren einen internationalen Erfolg in der jungen Sportart.</p>
-                <p>Das Männerteam gewann den Titel bei der U23-WM in Ulaanbaatar. In der Hauptstadt der Mongolei setzten sich Denzel Agyeman, Linus Beikame, Fabian Giessmann und Leon Fertig im Finale mit 21:13 gegen die USA durch.</p>
-                <p>Die Frauen um Elisa Mevius und Marie Reichert, die in Paris Gold gewonnen hatten, verpassten nach den Niederlagen im Halbfinale gegen die Niederlande (16:17) und im Spiel um Bronze gegen China (14:20) eine Medaille knapp. Mevius und Reichert spielten in der Mongolei gemeinsam mit Victoria Poros und Laura Zolper.</p>
-            </div>     
-        </div>
-
-        <div class="row footer">
-			<div class="col-12 center">
-                <footer>
-                    &copy; nobby 2024
-                </footer>
-            </div>
-        </div>
+        <footer class="text-center bg-black text-white py-8">
+            <p>&copy; nobby 2024</p>
+        </footer>
     </div>
 
     <script src="assets/js/script.js"></script>
