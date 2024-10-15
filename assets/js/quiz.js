@@ -25,7 +25,41 @@ const quizQuestions = [
         choices: ["USA", "Deutschland", "Spanien", "Frankreich"],
         correctAnswer: "Deutschland"
     },
-    // Weitere Fragen folgen...
+    {
+        question: "Wie hoch ist der offizielle Basketballkorb?",
+        choices: ["2,5 Meter", "3,0 Meter", "3,05 Meter", "3,5 Meter"],
+        correctAnswer: "3,05 Meter"
+    },
+    {
+        question: "Welches Team hält den Rekord für die meisten NBA-Meistertitel?",
+        choices: ["Chicago Bulls", "Los Angeles Lakers", "Boston Celtics", "Golden State Warriors"],
+        correctAnswer: "Boston Celtics"
+    },
+    {
+        question: "Wer war der MVP der NBA Finals 2020?",
+        choices: ["LeBron James", "Anthony Davis", "Jimmy Butler", "Giannis Antetokounmpo"],
+        correctAnswer: "LeBron James"
+    },
+    {
+        question: "Wie lange dauert ein Viertel in einem NBA-Spiel?",
+        choices: ["10 Minuten", "12 Minuten", "15 Minuten", "8 Minuten"],
+        correctAnswer: "12 Minuten"
+    },
+    {
+        question: "Welche Mannschaft gewann die NBA-Meisterschaft 2023?",
+        choices: ["Golden State Warriors", "Denver Nuggets", "Boston Celtics", "Miami Heat"],
+        correctAnswer: "Denver Nuggets"
+    },
+    {
+        question: "Was ist der Rekord für die meisten Punkte, die ein Spieler in einem einzigen NBA-Spiel erzielt hat?",
+        choices: ["81 Punkte", "100 Punkte", "92 Punkte", "73 Punkte"],
+        correctAnswer: "100 Punkte"
+    },
+    {
+        question: "In welchem Jahr fand das erste offizielle Basketballspiel statt?",
+        choices: ["1891", "1901", "1910", "1885"],
+        correctAnswer: "1891"
+    }
 ];
 
 // Funktion, die das Quiz-Layout auf der Seite rendert
