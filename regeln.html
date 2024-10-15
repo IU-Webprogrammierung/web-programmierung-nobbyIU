@@ -7,23 +7,15 @@
     <meta name="description" content="Lerne bei Ballin' Central die essenziellen Regeln des Basketballs kennen. Verstehe die Grundlagen und Taktiken, die das Spiel formen.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> 
-
-    <!-- 
-    /* Removed custom CSS styles in favor of Tailwind CSS */
-    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">    
-     //-->
-     
 </head>
 <body class="bg-neutral-900 text-white">
     <div class="container mx-auto bg-neutral-800">
 
-        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild"> 
+        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild" aria-label="Hauptnavigation"> 
             <div class="flex flex-col items-center">
-
                 <a href="index.html" class="mb-4">
                     <img src="assets/img/logo.svg" class="h-20 md:h-32" alt="Ballin' Central" loading="lazy" />
                 </a>
-        
                 <ul class="flex flex-col items-center space-y-4 text-lg md:flex-row md:space-x-6 md:space-y-0 md:text-xl">
                     <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="geschichte.html">Geschichte</a></li>
                     <li><a class="text-orange-400 font-bold transition duration-200 hover:text-orange-700" href="regeln.html"><strong>Regeln</strong></a></li>
@@ -33,192 +25,183 @@
             </div>
         </nav>
 
-        <div class="grid grid-cols-1">
-            <div class="col-span-1">
+        <section class="grid grid-cols-1 hero-common">
+            <figure class="col-span-1">
                 <img src="assets/img/rules_head.jpg" class="w-full h-auto" alt="Regeln im Basketball">
-            </div>
-        </div>
+            </figure>
+        </section>
         
-        <div class="grid grid-cols-1 mt-8 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-8 px-4 md:px-8">
+            <header class="col-span-1">
                 <h1 class="text-4xl font-bold text-orange-400 mb-4">Die <strong><u>wichtigsten Regeln</u></strong> im Basketball</h1>
+            </header>
+            <section class="col-span-1">
                 <div class="text-white text-2xl leading-loose space-y-6">
                     <p>Basketball ist ein temporeiches Spiel mit klaren Regeln, die das Spiel fair und spannend halten. Hier sind die <strong>wichtigsten Regeln</strong>:</p>
                 </div>
-            </div>
-        </div>   
-        
+            </section>
+        </article>   
 
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Teamgröße</h3>
-            </div>
-        </div>        
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_team.jpg" class="w-full h-auto rounded-md" alt="Team Regeln">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Beim Basketball befinden sich immer <strong>zehn Spieler</strong> auf dem Feld, jeweils fünf pro Team. Jede Mannschaft kann zudem bis zu sieben Ersatzspieler haben, die beliebig oft eingewechselt werden dürfen.</p>
-                    <p>Die Startaufstellung besteht aus den sogenannten „<strong>Starting Five</strong>“, also den fünf Spielern, die das Spiel beginnen. Sie besetzen üblicherweise die Positionen des Centers, zwei Forwards und zwei Guards, wobei Abweichungen möglich sind</p>                
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_team.jpg" class="w-full h-auto rounded-md" alt="Team Regeln">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Beim Basketball befinden sich immer <strong>zehn Spieler</strong> auf dem Feld, jeweils fünf pro Team. Jede Mannschaft kann zudem bis zu sieben Ersatzspieler haben, die beliebig oft eingewechselt werden dürfen.</p>
+                        <p>Die Startaufstellung besteht aus den sogenannten „<strong>Starting Five</strong>“, also den fünf Spielern, die das Spiel beginnen. Sie besetzen üblicherweise die Positionen des Centers, zwei Forwards und zwei Guards, wobei Abweichungen möglich sind.</p>                
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
 
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Spielzeit</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_playtime.jpg" class="w-full h-auto rounded-md" alt="Spielzeit">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Ein reguläres Basketballspiel besteht aus <strong>vier Vierteln</strong> mit einer jeweiligen Dauer von 10 oder 12 Minuten, abhängig von der Liga (in der NBA beträgt die Spielzeit 12 Minuten pro Viertel, während sie bei FIBA-Regelwerken 10 Minuten beträgt).</p>
-                    <p>Zwischen dem zweiten und dritten Viertel gibt es eine <strong>Halbzeitpause</strong> von etwa 15 Minuten. Sollte es nach der regulären Spielzeit zu einem Unentschieden kommen, folgt eine <strong>Verlängerung</strong> von 5 Minuten, die so oft wiederholt wird, bis ein Gewinner feststeht.</p>
-                    <p>Jede Mannschaft hat während des Spiels die Möglichkeit, <strong>Auszeiten</strong> zu nehmen, um taktische Änderungen vorzunehmen oder den Spielern Erholungszeit zu geben.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_playtime.jpg" class="w-full h-auto rounded-md" alt="Spielzeit">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Ein reguläres Basketballspiel besteht aus <strong>vier Vierteln</strong> mit einer jeweiligen Dauer von 10 oder 12 Minuten, abhängig von der Liga (in der NBA beträgt die Spielzeit 12 Minuten pro Viertel, während sie bei FIBA-Regelwerken 10 Minuten beträgt).</p>
+                        <p>Zwischen dem zweiten und dritten Viertel gibt es eine <strong>Halbzeitpause</strong> von etwa 15 Minuten. Sollte es nach der regulären Spielzeit zu einem Unentschieden kommen, folgt eine <strong>Verlängerung</strong> von 5 Minuten, die so oft wiederholt wird, bis ein Gewinner feststeht.</p>
+                        <p>Jede Mannschaft hat während des Spiels die Möglichkeit, <strong>Auszeiten</strong> zu nehmen, um taktische Änderungen vorzunehmen oder den Spielern Erholungszeit zu geben.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
 
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Punkteverteilung</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_points.jpg" class="w-full h-auto rounded-md" alt="Punkteverteilung">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Im Basketball gibt es drei Möglichkeiten, <strong>Punkte</strong> zu erzielen. Ein erfolgreicher Wurf innerhalb der <strong>Drei-Punkte-Linie</strong> zählt 2 Punkte. Wird der Ball von außerhalb dieser Linie in den Korb befördert, erhält die Mannschaft <strong>3 Punkte</strong>.</p>
-                    <p>Bei einem <strong>Freiwurf</strong>, der nach einem Foul vergeben wird, erhält der Werfer 1 Punkt pro erfolgreichem Wurf.</p>
-                    <p>Die <strong>Punkteverteilung</strong> spielt eine entscheidende Rolle bei der Strategie eines Teams, da das gezielte Setzen von <strong>Drei-Punkte-Würfen</strong> oder das Erzwingen von <strong>Fouls</strong> den Spielverlauf erheblich beeinflussen kann.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_points.jpg" class="w-full h-auto rounded-md" alt="Punkteverteilung">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Im Basketball gibt es drei Möglichkeiten, <strong>Punkte</strong> zu erzielen. Ein erfolgreicher Wurf innerhalb der <strong>Drei-Punkte-Linie</strong> zählt 2 Punkte. Wird der Ball von außerhalb dieser Linie in den Korb befördert, erhält die Mannschaft <strong>3 Punkte</strong>.</p>
+                        <p>Bei einem <strong>Freiwurf</strong>, der nach einem Foul vergeben wird, erhält der Werfer 1 Punkt pro erfolgreichem Wurf.</p>
+                        <p>Die <strong>Punkteverteilung</strong> spielt eine entscheidende Rolle bei der Strategie eines Teams, da das gezielte Setzen von <strong>Drei-Punkte-Würfen</strong> oder das Erzwingen von <strong>Fouls</strong> den Spielverlauf erheblich beeinflussen kann.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
      
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Dribbling</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_dribbling.jpg" class="w-full h-auto rounded-md" alt="Dribbling">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p><strong>Dribbling</strong> ist eine der Grundtechniken im Basketball und bezeichnet das kontinuierliche Tippen des Balls auf den Boden, um sich damit fortzubewegen.</p>
-                    <p>Ein korrektes Dribbling erfordert, dass der Spieler den Ball mit einer Hand kontrolliert und dabei sowohl Geschwindigkeit als auch Richtung variieren kann. Es ist essenziell, den Ball nicht mit beiden Händen gleichzeitig zu berühren oder ihn zu tragen (sogenanntes <strong>"Carrying"</strong>), da dies ein Regelverstoß ist.</p>
-                    <p>Gutes Dribbling ist nicht nur wichtig, um sich an der Verteidigung vorbei zu bewegen, sondern auch, um Spielzüge aufzubauen und das Tempo des Spiels zu kontrollieren.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_dribbling.jpg" class="w-full h-auto rounded-md" alt="Dribbling">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p><strong>Dribbling</strong> ist eine der Grundtechniken im Basketball und bezeichnet das kontinuierliche Tippen des Balls auf den Boden, um sich damit fortzubewegen.</p>
+                        <p>Ein korrektes Dribbling erfordert, dass der Spieler den Ball mit einer Hand kontrolliert und dabei sowohl Geschwindigkeit als auch Richtung variieren kann. Es ist essenziell, den Ball nicht mit beiden Händen gleichzeitig zu berühren oder ihn zu tragen (sogenanntes <strong>"Carrying"</strong>), da dies ein Regelverstoß ist.</p>
+                        <p>Gutes Dribbling ist nicht nur wichtig, um sich an der Verteidigung vorbei zu bewegen, sondern auch, um Spielzüge aufzubauen und das Tempo des Spiels zu kontrollieren.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
 
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Fouls</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_fouls.jpg" class="w-full h-auto rounded-md" alt="Fouls">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Ein <strong>Foul</strong> im Basketball tritt auf, wenn ein Spieler gegen die Regeln verstößt, indem er unerlaubten Körperkontakt mit einem Gegenspieler verursacht.</p>
-                    <p>Zu den häufigsten Arten von <strong>Fouls</strong> gehören das <strong>persönliche Foul</strong>, bei dem ein Spieler den Gegner beim Dribbeln, Werfen oder Passen behindert, und das <strong>technische Foul</strong>, welches aufgrund unsportlichen Verhaltens verhängt wird, wie z. B. Protestieren gegen Schiedsrichterentscheidungen.</p>
-                    <p>Bei fünf (oder in der NBA sechs) persönlichen <strong>Fouls</strong> wird ein Spieler disqualifiziert und muss das Spielfeld verlassen. <strong>Fouls</strong> können zu <strong>Freiwürfen</strong> oder Ballbesitzwechsel führen, was die Dynamik des Spiels beeinflussen kann.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_fouls.jpg" class="w-full h-auto rounded-md" alt="Fouls">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Ein <strong>Foul</strong> im Basketball tritt auf, wenn ein Spieler gegen die Regeln verstößt, indem er unerlaubten Körperkontakt mit einem Gegenspieler verursacht.</p>
+                        <p>Zu den häufigsten Arten von <strong>Fouls</strong> gehören das <strong>persönliche Foul</strong>, bei dem ein Spieler den Gegner beim Dribbeln, Werfen oder Passen behindert, und das <strong>technische Foul</strong>, welches aufgrund unsportlichen Verhaltens verhängt wird, wie z. B. Protestieren gegen Schiedsrichterentscheidungen.</p>
+                        <p>Bei fünf (oder in der NBA sechs) persönlichen <strong>Fouls</strong> wird ein Spieler disqualifiziert und muss das Spielfeld verlassen. <strong>Fouls</strong> können zu <strong>Freiwürfen</strong> oder Ballbesitzwechsel führen, was die Dynamik des Spiels beeinflussen kann.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
 
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Zeitregeln</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_time.jpg" class="w-full h-auto rounded-md" alt="Zeitregeln">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Im Basketball gibt es mehrere wichtige <strong>Zeitregeln</strong>, die das Spieltempo und die Strategien beeinflussen. Eine der zentralen Regeln ist die <strong>24-Sekunden-Regel</strong>, die vorschreibt, dass ein Team innerhalb von 24 Sekunden einen Korbwurf abgeben muss, nachdem es den Ballbesitz erlangt hat.</p>
-                    <p>Zudem gibt es die <strong>8-Sekunden-Regel</strong>, die besagt, dass ein Team den Ball innerhalb von 8 Sekunden aus der eigenen Spielfeldhälfte über die Mittellinie bringen muss.</p>
-                    <p>Eine weitere Zeitregel ist die <strong>3-Sekunden-Regel</strong>, die besagt, dass ein angreifender Spieler sich nicht länger als 3 Sekunden in der gegnerischen Zone aufhalten darf. Diese <strong>Regeln</strong> sind entscheidend, um das Spiel schnell und dynamisch zu halten und verhindern, dass ein Team zu defensiv oder zu langsam spielt.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_time.jpg" class="w-full h-auto rounded-md" alt="Zeitregeln">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Im Basketball gibt es mehrere wichtige <strong>Zeitregeln</strong>, die das Spieltempo und die Strategien beeinflussen. Eine der zentralen Regeln ist die <strong>24-Sekunden-Regel</strong>, die vorschreibt, dass ein Team innerhalb von 24 Sekunden einen Korbwurf abgeben muss, nachdem es den Ballbesitz erlangt hat.</p>
+                        <p>Zudem gibt es die <strong>8-Sekunden-Regel</strong>, die besagt, dass ein Team den Ball innerhalb von 8 Sekunden aus der eigenen Spielfeldhälfte über die Mittellinie bringen muss.</p>
+                        <p>Eine weitere Zeitregel ist die <strong>3-Sekunden-Regel</strong>, die besagt, dass ein angreifender Spieler sich nicht länger als 3 Sekunden in der gegnerischen Zone aufhalten darf. Diese <strong>Regeln</strong> sind entscheidend, um das Spiel schnell und dynamisch zu halten und verhindern, dass ein Team zu defensiv oder zu langsam spielt.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
 
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Schrittfehler (Traveling)</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_steps.jpg" class="w-full h-auto rounded-md" alt="Schrittfehler">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Ein <strong>Schrittfehler</strong>, auch als "Traveling" bezeichnet, tritt auf, wenn ein Spieler, der den Ball hält, seine Füße nicht regelkonform bewegt. Das bedeutet, dass ein Spieler entweder mehr als zwei Schritte ohne Dribbling macht oder seinen sogenannten Standfuß bewegt, bevor er den Ball gepasst, gedribbelt oder geworfen hat.</p>
-                    <p><strong>Schrittfehler</strong> sind ein häufiger Regelverstoß und führen zu einem Ballverlust, wodurch der Gegner den Ballbesitz erhält.</p>
-                    <p>Diese <strong>Regel</strong> sorgt dafür, dass der Spieler den Ball nicht unrechtmäßig über große Distanzen tragen kann und fördert eine saubere Technik im Ballhandling.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_steps.jpg" class="w-full h-auto rounded-md" alt="Schrittfehler">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Ein <strong>Schrittfehler</strong>, auch als "Traveling" bezeichnet, tritt auf, wenn ein Spieler, der den Ball hält, seine Füße nicht regelkonform bewegt. Das bedeutet, dass ein Spieler entweder mehr als zwei Schritte ohne Dribbling macht oder seinen sogenannten Standfuß bewegt, bevor er den Ball gepasst, gedribbelt oder geworfen hat.</p>
+                        <p><strong>Schrittfehler</strong> sind ein häufiger Regelverstoß und führen zu einem Ballverlust, wodurch der Gegner den Ballbesitz erhält.</p>
+                        <p>Diese <strong>Regel</strong> sorgt dafür, dass der Spieler den Ball nicht unrechtmäßig über große Distanzen tragen kann und fördert eine saubere Technik im Ballhandling.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
  
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Sprungball</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_jumpball.jpg" class="w-full h-auto rounded-md" alt="Sprungball">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p>Der <strong>Sprungball</strong> ist eine Methode, um das Spiel zu Beginn oder nach bestimmten Situationen neu zu starten. Beim <strong>Sprungball</strong> stellen sich zwei gegnerische Spieler in der Mitte des Spielfelds gegenüber, während der Schiedsrichter den Ball senkrecht in die Luft wirft.</p>
-                    <p>Beide Spieler versuchen dann, den Ball durch einen kontrollierten Tipp an einen ihrer Mitspieler weiterzuleiten. Der <strong>Sprungball</strong> wird normalerweise nur zu Beginn eines Spiels durchgeführt, aber auch in besonderen Fällen wie einer unklaren Ballbesitzsituation kann er erneut eingesetzt werden.</p>
-                    <p>Diese <strong>Regel</strong> dient dazu, das Spiel auf faire Weise fortzusetzen.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_jumpball.jpg" class="w-full h-auto rounded-md" alt="Sprungball">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p>Der <strong>Sprungball</strong> ist eine Methode, um das Spiel zu Beginn oder nach bestimmten Situationen neu zu starten. Beim <strong>Sprungball</strong> stellen sich zwei gegnerische Spieler in der Mitte des Spielfelds gegenüber, während der Schiedsrichter den Ball senkrecht in die Luft wirft.</p>
+                        <p>Beide Spieler versuchen dann, den Ball durch einen kontrollierten Tipp an einen ihrer Mitspieler weiterzuleiten. Der <strong>Sprungball</strong> wird normalerweise nur zu Beginn eines Spiels durchgeführt, aber auch in besonderen Fällen wie einer unklaren Ballbesitzsituation kann er erneut eingesetzt werden.</p>
+                        <p>Diese <strong>Regel</strong> dient dazu, das Spiel auf faire Weise fortzusetzen.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </article>
         
-        <div class="grid grid-cols-1 mt-24 px-4 md:px-8">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 mt-24 px-4 md:px-8">
+            <header class="col-span-1">
                 <h3 class="text-3xl font-black text-orange-400 mb-4">Goaltending</h3>
-            </div>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-8 mb-24">
-            <div class="md:col-span-1">
-                <img src="assets/img/rules_goaltending.jpg" class="w-full h-auto rounded-md" alt="Goaltending">
-            </div>
-            <div class="md:col-span-2">
-                <div class="text-white text-2xl leading-loose space-y-6">
-                    <p><strong>Goaltending</strong> bezeichnet einen Regelverstoß, bei dem ein Verteidiger den Ball illegal blockiert, nachdem dieser auf dem Weg zum Korb ist und sich bereits im Abwärtssinken befindet oder den höchsten Punkt erreicht hat.</p>
-                    <p>Es gilt ebenfalls als <strong>Goaltending</strong>, wenn der Ball den Korb bereits berührt oder sich direkt über dem Ring befindet und ein Spieler ihn blockiert.</p>
-                    <p>Wird <strong>Goaltending</strong> festgestellt, zählt der Korb automatisch für die angreifende Mannschaft, unabhängig davon, ob der Ball den Korb tatsächlich erreicht hätte. Diese <strong>Regel</strong> schützt die Werfer und sorgt dafür, dass das Spiel fair bleibt.</p>
+            </header>
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+                <figure class="md:col-span-1">
+                    <img src="assets/img/rules_goaltending.jpg" class="w-full h-auto rounded-md" alt="Goaltending">
+                </figure>
+                <div class="md:col-span-2">
+                    <div class="text-white text-2xl leading-loose space-y-6">
+                        <p><strong>Goaltending</strong> bezeichnet einen Regelverstoß, bei dem ein Verteidiger den Ball illegal blockiert, nachdem dieser auf dem Weg zum Korb ist und sich bereits im Abwärtssinken befindet oder den höchsten Punkt erreicht hat.</p>
+                        <p>Es gilt ebenfalls als <strong>Goaltending</strong>, wenn der Ball den Korb bereits berührt oder sich direkt über dem Ring befindet und ein Spieler ihn blockiert.</p>
+                        <p>Wird <strong>Goaltending</strong> festgestellt, zählt der Korb automatisch für die angreifende Mannschaft, unabhängig davon, ob der Ball den Korb tatsächlich erreicht hätte. Diese <strong>Regel</strong> schützt die Werfer und sorgt dafür, dass das Spiel fair bleibt.</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        
+            </section>
+        </article>
         
         <footer class="text-center bg-black text-white py-8">
             <p>&copy; nobby 2024</p>

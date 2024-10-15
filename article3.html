@@ -6,24 +6,16 @@
     <title>Ballin' Central - Newsticker</title>
     <meta name="description" content="Aktuelle Nachrichten und Artikel rund um das Thema Basketball">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css"> 
-
-    <!-- 
-    /* Removed custom CSS styles in favor of Tailwind CSS */
-    <link rel="stylesheet" href="assets/css/grid.css" type="text/css">    
-     //-->
-     
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
 </head>
 <body class="bg-neutral-900 text-white">
     <div class="container mx-auto bg-neutral-800">
 
-        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild"> 
+        <nav class="bg-zinc-50 dark:bg-neutral-700 py-8 shadow-dark-mild" aria-label="Hauptnavigation"> 
             <div class="flex flex-col items-center">
-
                 <a href="index.html" class="mb-4">
                     <img src="assets/img/logo.svg" class="h-20 md:h-32" alt="Ballin' Central" loading="lazy" />
                 </a>
-        
                 <ul class="flex flex-col items-center space-y-4 text-lg md:flex-row md:space-x-6 md:space-y-0 md:text-xl">
                     <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="geschichte.html">Geschichte</a></li>
                     <li><a class="text-black/60 transition duration-200 hover:text-black/80 dark:text-white/60 dark:hover:text-white/80 font-bold" href="regeln.html">Regeln</a></li>
@@ -33,23 +25,23 @@
             </div>
         </nav>
 
-        <div class="grid grid-cols-1 px-4 md:px-8 mt-10 mb-10">
+        <section class="grid grid-cols-1 px-4 md:px-8 mt-10 mb-10">
             <div class="col-span-1 text-right">
                 <p class="text-white text-2xl">14.09.2024 • 12:25 Uhr</p>
             </div>
-        </div>
+        </section>
 
-        <div class="grid grid-cols-1 gap-8 px-4 md:px-8 mb-10">
-            <div class="col-span-1">
+        <article class="grid grid-cols-1 gap-8 px-4 md:px-8 mb-10">
+            <header class="col-span-1">
                 <div class="text-white text-2xl leading-loose space-y-6">
                     <h3 class="text-4xl font-bold text-orange-400"><em>Historisch! Wunderkind bricht Rekord!</em></h3>
                     <p><strong>Basketball-Wunderkind Caitlin Clark sorgt in der WNBA weiterhin für Furore. Der US-Star stellt einen neuen Rekord auf.</strong></p>
                 </div>
-            </div>
-            <div class="col-span-1 flex justify-center">
+            </header>
+            <figure class="col-span-1 flex justify-center">
                 <img src="assets/img/news3.jpg" class="w-1/2 h-auto rounded-md" alt="Caitlin Clark">
-            </div>
-            <div class="col-span-1">
+            </figure>
+            <section class="col-span-1">
                 <div class="text-white text-2xl leading-loose space-y-6">
                     <p>Rekord für Caitlin Clark! Das Basketball-Wunderkind hat in der Nacht zu Samstag zwar mit 74:78 gegen WNBA-Meister Las Vegas Aces verloren, doch während der Niederlage einen neuen Liga-Bestwert aufgestellt.</p>
                     <p>Mitten im zweiten Viertel passte sie den Ball zu Mitspielerin Kelsey Mitchell, welche zum Korb zog und die Punkte für die Indiana Fever machte. Für Clark war es in ihrer Debütsaison der insgesamt 317. Assist im 38. Spiel.</p>
@@ -61,8 +53,8 @@
                     <p>Mit einem großen Hype war Clark im Sommer in die WNBA gekommen, nachdem sie in ihrer College-Zeit einige Rekorde aufgestellt und dadurch viel Aufmerksamkeit generiert hatte. Selbst NBA-Superstar LeBron James reagierte auf die 22-Jährige, als sie mit der University of Iowa das College-Finale dramatisch verlor.</p>
                     <p>Nun stehen für Clark die ersten WNBA-Playoffs an. Zwei Partien vor dem Ende der regulären Saison sind die Fever bereits mit einer ausgeglichenen Bilanz von 19 Siegen und 19 Niederlage für die Post-Season qualifiziert und belegen in der Tabelle den sechsten Platz.</p>
                 </div>
-            </div>
-        </div>              
+            </section>
+        </article>              
 
         <footer class="text-center bg-black text-white py-8">
             <p>&copy; nobby 2024</p>
